@@ -1,2 +1,2 @@
-simplicity
+simplicity is beauty
 ==========
