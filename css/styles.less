@@ -1,0 +1,154 @@
+/* LESS Document */
+
+@main-color : #222;
+@main-font: 'Domine',serif;
+@heading-font : 'Oswald',sans-serif;
+
+.center() {
+  text-align: center;
+}
+.fSize(@size) {
+  font-size: @size;
+}
+
+/***************/
+
+body {
+  color : @main-color;
+  font-family: @main-font;
+}
+
+a {
+  color: #20b2aa;
+  &:hover {
+    color:#20b2aa;
+  }
+}
+
+#logo {
+  text-align: center;
+  h1 {
+    text-transform: uppercase;
+    .fSize(48px);
+    color : @main-color;
+    font-family: @heading-font;
+  }
+  p {
+    margin-top: 14px;
+    margin-bottom: 30px;
+  }
+}
+
+/* .navbar-nav {
+    width: 100%;
+    text-align: center;
+    > li {
+      float: none;
+      display: inline-block;
+    }
+} */
+
+header {
+  margin:45px 0;
+  nav {
+    ul {
+      position: relative;
+      left: 50%;
+      float: left;
+
+    }
+    li {
+      position: relative;
+      right: 50%;
+      .center;
+      margin: 6px 0;
+      border-right:1px solid #ddd;
+      padding: 8px 20px;
+      display: block;
+//      height: 20px;
+      &.last {
+        border-right: none;
+      }
+
+      a {
+//        padding: 0;
+        text-transform: uppercase;
+        color : #353535;
+        .fSize(13px);
+        font-family: @heading-font;
+        &:hover {
+          color:#20b2aa;
+        }
+      }
+    }
+  }
+}
+
+.menu {
+  border: none;
+  border-radius: 0;
+  border-top: 1px solid #ddd;
+  border-bottom: 2px solid #ddd;
+  background-color: #fff;
+}
+/***/
+.title {
+  .center;
+  .fSize(32px);
+  font-weight: bold;
+  margin:0 0 30px 0;
+}
+#date {
+  .center;
+  color:#353535;
+  .fSize(16px);
+  font-style:italic;
+}
+.expert-link {
+  //width:100%;
+  .center;
+  .fSize(14px);
+  font-weight:bold;
+}
+.divider {
+  width:100%;
+  .center;
+  color:#ddd;
+  .fSize(32px);
+  margin-top:42px;
+}
+//res
+@media (max-width:768px) {
+
+  #logo h1 {
+    .fSize(36px);
+    margin-top: 6px;
+  }
+
+  header {
+    margin: 25px 0;
+
+    .navbar-toggle {
+      background-color: @main-color;
+      position: absolute;
+      float: left;
+      margin-top: 9px;
+      z-index: 9999;
+      span {
+        background-color: #fff;
+      }
+    }
+
+    nav {
+      li {
+        border-right: 0;
+      }
+    }
+  }
+
+  .navbar {
+    min-height: 0px;
+  }
+}
+
+

@@ -1,0 +1,119 @@
+/* LESS Document */
+/***************/
+body {
+  color: #222222;
+  font-family: 'Domine', serif;
+}
+a {
+  color: #20b2aa;
+}
+a:hover {
+  color: #20b2aa;
+}
+#logo {
+  text-align: center;
+}
+#logo h1 {
+  text-transform: uppercase;
+  font-size: 48px;
+  color: #222222;
+  font-family: 'Oswald', sans-serif;
+}
+#logo p {
+  margin-top: 14px;
+  margin-bottom: 30px;
+}
+/* .navbar-nav {
+    width: 100%;
+    text-align: center;
+    > li {
+      float: none;
+      display: inline-block;
+    }
+} */
+header {
+  margin: 45px 0;
+}
+header nav ul {
+  position: relative;
+  left: 50%;
+  float: left;
+}
+header nav li {
+  position: relative;
+  right: 50%;
+  text-align: center;
+  margin: 6px 0;
+  border-right: 1px solid #ddd;
+  padding: 8px 20px;
+  display: block;
+}
+header nav li.last {
+  border-right: none;
+}
+header nav li a {
+  text-transform: uppercase;
+  color: #353535;
+  font-size: 13px;
+  font-family: 'Oswald', sans-serif;
+}
+header nav li a:hover {
+  color: #20b2aa;
+}
+.menu {
+  border: none;
+  border-radius: 0;
+  border-top: 1px solid #ddd;
+  border-bottom: 2px solid #ddd;
+  background-color: #fff;
+}
+/***/
+.title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  margin: 0 0 30px 0;
+}
+#date {
+  text-align: center;
+  color: #353535;
+  font-size: 16px;
+  font-style: italic;
+}
+.expert-link {
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+}
+.divider {
+  width: 100%;
+  text-align: center;
+  color: #ddd;
+  font-size: 32px;
+  margin-top: 42px;
+}
+@media (max-width: 768px) {
+  #logo h1 {
+    font-size: 36px;
+    margin-top: 6px;
+  }
+  header {
+    margin: 25px 0;
+  }
+  header .navbar-toggle {
+    background-color: #222222;
+    position: absolute;
+    float: left;
+    margin-top: 9px;
+    z-index: 9999;
+  }
+  header .navbar-toggle span {
+    background-color: #fff;
+  }
+  header nav li {
+    border-right: 0;
+  }
+  .navbar {
+    min-height: 0px;
+  }
+}
