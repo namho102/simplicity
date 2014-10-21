@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html ng-app>
 
 <head>
     <meta charset="utf-8">
@@ -12,6 +12,8 @@
 
     <!--<link rel="stylesheet" href="css/styles.css"/>-->
     <!--for Chrome-->
+
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
 </head>
 
 <body>
@@ -52,7 +54,7 @@
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
                 <article id="intro">
-                    <p id="date"></p>
+                    <p id="date" ng-controller="TimeController">{{ now | date: 'longDate' }}</p>
                     <h3 class="title">Hello World!</h3>
                     <p>Dolor sit amet, consectetur adipisicing elit. Rerum aspernatur dolor dolorem atque velit, hic eveniet aliquam omnis accusamus eius nemo placeat corrupti iusto ducimus incidunt cumque ratione saepe reprehenderit mollitia quod optio vel vitae illum ea! Minus officia aut nemo dolorem nihil quae possimus aperiam tenetur itaque. Accusantium, neque!</p>
                     <p class="expert-link"><a href="">~Get Started~</a></p>
