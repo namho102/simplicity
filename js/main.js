@@ -2,7 +2,9 @@
  *
  */
 
-//var now = new Date();
-//console.log(now.toDateString());
-var date = document.getElementById('date');
-date.textContent = new Date().toDateString();
+// var date = document.getElementById('date');
+// date.textContent = new Date().toDateString();
+
+function TimeController($scope) {
+	$scope.now = new Date();
+}
